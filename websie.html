@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Website-Development</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="respondsive.css" />
   </head>
@@ -13,373 +13,87 @@
       <div class="logo">Pongsakorn Sutana</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Pongsakorn Sutana</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+  <nav id="hamburger-nav">
+    <div class="logo">Pongsakorn Sutana</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./img/self1.png" alt="profile picture" />
+      <div class="menu-links">
+        <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Pongsakorn Sutana</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <!-- <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button> -->
-          <button class="btn btn-color-1" onclick="location.href='#'">
-            Resume
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/pongsakorn-sutana-968690249/'"
-          />
-          <img
-            src="./assets/facebook.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://www.facebook.com/pongsakornsutana'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">get to know more about each other</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./img/self.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <!-- <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div> -->
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              /> 
-              <h3>Education</h3>
-              <p>King Mongkut’s University of Technology Thonburi</p>
-            </div>
+    </div>
+  </nav>
+  <section id="projects">
+    <h1 class="title">My Works</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
           </div>
-          <div class="text-container">
-            <p>
-              I started coding in middle school. Started learning how to write with Dreamweaver, 
-              then started learning PHP and MySQL. I continued to practice writing logic until I was in high school. 
-              I still feel like I'm not serious about the coding Because personally, 
-              I really liked design until I was in university. I learned more about coding. 
-              But when I feel like the logic isn't good So I turned to learning how to write html css java script and felt better. 
-              So I practice writing more and more until today. 
-            </p>
+          <h4 class="experience-sub-title project-title">Travel</h4>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./Travel/index.html'"
+            >
+            Web Design Travel
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./img/Cocono1.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h4 class="experience-sub-title project-title">Product</h4>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./product.html'"
+            >
+            Product-Design
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./img/advertisement/pedri.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h4 class="experience-sub-title project-title">Advertisement</h4>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./advertisement.html'"
+            >
+            Advertisement-Design
+            </button>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="container" >
-              <div class="boxcon">
-                 <div class="skillsbox">
-                  <img src="img/figma.png" alt="">
-                   <h3>Figma</h3>
-                   <p>UI Design for moble plaform.<br>
-                    UI Design for desktop plaform.</p>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="img/ps6.png" alt="">
-                   <h3>Photoshop</h3>
-                   <p>Logo.<br>
-                    Artwork. <br>
-                    Edit picture file. <br>
-                    Photo manipulation.</p>
-                    <br>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="Img/AI.png" alt="">
-                   <h3>Illustrator</h3>
-                   <p>Logo. <br>
-                    Draw a picture. <br>
-                    daft art. </p>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="img/Visualcode.png" alt="">
-                   <h3>Visual stodio Code</h3>
-                   <p>Language C#.<br>
-                    Html,css,java script
-                    Create website.<br>
-                    Create application.</p>
-                    <br>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="img/Animatecc.png" alt="">
-                   <h3>Animate cc</h3>
-                   <p>Animaton.</p>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="img/procreate.jpg" alt="">
-                   <h3>Procreate</h3>
-                   <p>Logo.<br>
-                    Draw a picture.</p>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="img/unity.png" alt="">
-                   <h3>Unity</h3>
-                   <p>AR in application. <br>
-                    AR simulation. <br>
-                    UI for mobile application. <br>
-                    Ui for desktop application.</p>
-                    <br>
-      
-                </div>
-                <div class="skillsbox">
-                  <img src="img/arduino.png" alt="">
-                   <h3>Arduino IDE</h3>
-                   <p>Language C+. <br>
-                    Create hardware.</p>
-                </div>
-              </div>                
-            </div>
-          </div>
-        </div>
-      </div>   
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      /> 
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Some of My </p>
-      <h1 class="title">Works</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">website</h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./websie.html'"
-              >
-              Website-Development
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./img/Cocono1.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">Product</h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./product.html'"
-              >
-              Product-Design
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./img/advertisement/pedri.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">Advertisement</h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./advertisement.html'"
-              >
-              Advertisement-Design
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./img/logo/logo3.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">Logo</h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./logo.html'"
-              >
-              Logo-Design
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./img/icecreamlogo.png"
-                alt="Project 5"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">LogoSign</h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./logosign.html'"
-              >
-              Logo-Sign
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="img/_MG_0045.png"
-                alt="Project 6"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">Photography</h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='./photography.html'"
-              >
-              Photography
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/facebook.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.facebook.com/pongsakornsutana">facebook</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/instagram.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.instagram.com/tt.u_iiiiiii/">instagram</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/pongsakorn-sutana-968690249/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>pongsakornsutana@gmail.com</p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p> &#169; 2024 Pongsakorn Sutana.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
