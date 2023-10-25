@@ -1,0 +1,369 @@
+body {
+    font-family: 'Roboto',Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
+header {
+    background-image: url('./img/bgnav-cillian_murphy.jpg');
+    background-size: cover; /* ให้รูปพื้นหลังปรับขนาดให้เต็ม container */
+    background-repeat: no-repeat; /* ไม่ต้องทำซ้ำรูปพื้นหลัง */
+    background-position: center; /* จัดตำแหน่งของรูปพื้นหลังให้อยู่ตรงกลาง */
+    color: #fff;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar .container h1{
+    list-style: none;
+    font-size: 48px;
+    font-weight: 600;
+    animation: fadeInOut 5s infinite; /* ใช้ animation fadeInOut ที่มีความยาว 5 วินาที ซ้ำไปเรื่อย ๆ */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+    text-decoration: none;
+
+}
+nav ul li a{
+    color: #fff
+    
+}
+.navbar ul li a:hover {
+    color: #ff0000; /* สีของข้อความเมื่อผู้ใช้เม้าส์ไปวางบน Navbar */
+}
+section {
+    margin-bottom: 20px;
+}
+/* Existing CSS rules */
+#categories .slider{
+    margin-top: 40%;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.slide {
+    position: relative;
+}
+
+.slide-content {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    /* ปรับสีข้อความตามที่คุณต้องการ */
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button img,
+.next-button img {
+    width: 30px; /* ปรับขนาดของลูกศรตามต้องการ */
+    height: 30px;
+}
+
+.prev-button img {
+    transform: rotate(180deg); /* หมุนลูกศรถัดไปให้เหมือนลูกศรก่อนหน้า */
+}
+.slider .slide img {
+    margin-top: 130%;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+#quote-details{
+    margin-top: 50%;
+}
+
+/* เพิ่ม transition effect เพื่อทำให้การเปลี่ยนสไลด์ดูนุ่มนวล */
+.slider .slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+#quote-categories{
+    margin-top: 60%;
+}
+/*griddddd*/
+/* CSS สำหรับ grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 30px;
+}
+.overlay {
+    text-align: center;
+    text-decoration: none;
+}
+.overlay .text a {
+    color: #fff;
+}
+.grid-item {
+    position: relative;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* CSS สำหรับ modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-height: 80vh;
+}
+.close {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+#caption {
+    text-align: center;
+    color: white; /* เปลี่ยนสีของข้อความตามที่คุณต้องการ */
+    padding: 10px;
+}
+/*aboutttttttttttttt*/
+#about {
+    padding: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+.timeline{
+    max-width: 70%;
+}
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-left: 20px;
+    max-width: 70%;
+    
+}
+.event p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.profile-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-images .image img {
+    max-width: 80%;
+    height: auto;
+}
+#contact-form{
+    color: #000000;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+ .social-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #000000; /* Change the icon color */
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+     color: #7e7e7e; /* Change the icon color on hover */
+    }
+
+
+
+/* CSS สำหรับ responsive */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+#contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+#contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button {
+    background-color: #1d1e1d;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#contact-form button:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+/* Media query for screens smaller than 768px (typical smartphones) */
+@media (max-width: 767px) {
+    header {
+        padding: 8px 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .quote-card {
+        padding: 15px;
+    }
+}
+
+/* Media query for screens between 768px and 991px (small tablets and larger smartphones) */
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .quote-card {
+        padding: 20px;
+    }
+}
+
+/* Media query for screens larger than 991px (typical tablets and desktops) */
+@media (min-width: 992px) {
+    header {
+        padding: 12px 0;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .quote-card {
+        padding: 25px;
+    }
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
