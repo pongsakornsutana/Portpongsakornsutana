@@ -73,7 +73,8 @@
   }
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 3px;
   }
   .experience-sub-title {
     font-size: 0.8rem;
