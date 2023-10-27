@@ -1,0 +1,457 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:Mouse Memoirs ;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    
+    max-width: 100%;
+    height: 600px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-image:linear-gradient(rgba(22, 22, 22, 0.5),rgba(16, 16, 16, 0.5)), url(https://c4.wallpaperflare.com/wallpaper/1000/131/812/lemon-eggs-board-nuts-wallpaper-preview.jpg);
+
+}   
+.header h1{
+     color: #fff;
+     font-size: 68px;
+     text-align: center;
+     margin-top: 10%;
+     letter-spacing: 5px;
+}
+.Ingredient{
+     position: absolute;
+     margin-top: 45rem;
+}
+.Ingredient h2{
+    color: #fff;
+    background-color: #594841;
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 1.5px;  
+}
+.detail{
+    position: absolute;
+    margin-top: 50rem;
+    background-color: #594841;
+    max-width: 100%;
+    height: 15rem;
+}
+.detail p{
+    color: #fff;  
+    text-align: center;
+    max-width: 85%;
+    padding-top: 20px;
+    margin-left: 10rem;
+    letter-spacing: 1.5px;  
+}
+.detail .Ellipsebox{
+    justify-content: center;
+    align-items: center;
+}
+.Ellipsebox{
+     position: absolute;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin-top: 55rem;
+}
+.Ellipsebox .ellip{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+}
+/*detail*/
+
+.detail1{
+    position: absolute;
+    margin-top: 70rem;
+    background-color: #594841;
+    max-width: 100%;
+    height: 15rem;
+}
+.detail1 p{
+    color: #fff;  
+    text-align: center;
+    max-width: 85%;
+    padding-top: 20px;
+    margin-left: 10rem;
+    letter-spacing: 1.5px;  
+}
+.Ellipsebox1{
+     position: absolute;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin-top: 75rem;
+}
+.Ellipsebox1 .ellip1{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1.5px;
+    margin-left: 450px;
+}
+.detail2{
+    position: absolute;
+    padding: 10px;
+    margin-top: 90rem;
+    background: #594841; 
+    max-width: 100%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.box-data{
+    text-align: center;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+}
+.data{
+    color: #fff;   
+}
+.Step h2{
+    position: absolute;
+    padding-left: 10px;
+    text-align: start;
+    font-size: 48px;
+    padding-top: 10px;
+    margin-top: 120rem;
+    background: #594841;
+    width: 30%;
+    height: 80px;
+    color: #fff;
+}
+.step{
+    color: #fff;
+    margin-top: 5rem;
+    height: 350px;
+    background: #594841;
+}
+.box-step{
+    position: absolute;
+    margin-top: 135rem;
+    max-width: 100%;
+    display: grid;
+    background-color: #594841; 
+}
+.box-step .step {
+    text-align: center;
+    margin-left: 20%;
+    max-width: 60%;
+}
+.step1{
+    gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,auto));
+}
+.step2{
+    gap: 10%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,auto));
+}
+.step3{
+    gap: 10%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,auto));
+}
+.step4{
+    gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,auto));
+}
+.footer{
+    position: absolute;
+    text-align: center;
+    letter-spacing: 1.5px;
+    height: 20rem;
+    color: #fff;
+    background-color: #594841;
+    top: 250rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer p{
+    text-align: center;
+    margin-top: 30px;
+}
+.socials{
+    letter-spacing: 1.5px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 20px;
+}
+.socials a{
+    text-decoration: none;
+    color:#fff;
+}
+.socials a i{
+    font-size: 3rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer h3{
+    padding-top: 40px;
+}
+.footer-bottom p{
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 425px){
+ 
+    .header{
+        width: 100%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+    .header h1{
+        font-size: 45px;
+        margin-top: 250px;
+    }
+    .detail{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .detail p{
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        /* border: 1px solid rgb(0, 0, 0); */
+        margin-left: 5rem;
+    }
+    .detail .Ellipsebox{
+        justify-content: center;
+        align-items: center;
+    }
+    .Ellipsebox .ellip{
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+        letter-spacing: 3px;
+        margin-left: 100px;
+    }
+    .detail1{
+        width: 100%;
+    }
+    .detail1 p{
+        text-align: center;
+        width: 80%;
+        margin-left: 80px;
+        letter-spacing: 1.5px;  
+    }
+    .Ellipsebox1 .ellip1{
+        letter-spacing: 1.5px;
+        margin-left: 190px;
+        
+    }
+     .detail2{
+        margin-top: 90rem;
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+    }
+    .detail2 ul{
+        text-align: center;
+        width: 80%;
+        margin-left: 80px;
+    } 
+    .box-data{
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    }
+    .Step h2{
+        padding-left: 40px;
+        font-size: 24px;
+        margin-top: 165rem;
+        padding-top: 10px;
+        height: 50px;
+        width: 40%;
+    }
+    .step{
+        margin-top: 0.5rem;
+        height: 380px;
+    }
+    .box-step{
+        margin-top: 175rem;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .box-step .step {
+        text-align: center;
+        margin-left: 20%;
+        width: 60%;
+    }
+    .step1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    }
+    .step2{
+        margin-left: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    }
+    .step3{
+        margin-left: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    }
+    .step4{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    }
+
+    .footer{
+        text-align: center;
+        letter-spacing: 1.5px;
+        top: 280rem;
+    }
+    .socials{
+        letter-spacing: 1.5px;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+
+    @media screen and (min-width: 1440px){
+        html{
+            overflow: auto;
+        }
+        .header h1{
+            margin-top: 15rem;
+        }
+        .detail{
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .detail p{
+            size: 18px;
+            text-align: center;
+            justify-content: center;
+            width: 80%;
+            /* border: 1px solid rgb(0, 0, 0); */
+        }
+        .detail .Ellipsebox{
+            justify-content: center;
+            align-items: center;
+        }
+        .Ellipsebox .ellip{
+            
+            text-align: center;
+            color: #fff;
+            margin-top: 10px;
+            letter-spacing: 3px;
+            margin-left: 150px;
+            padding-left: 150px;
+        }
+        .detail1{
+            width: 100%;
+        }
+        .detail1 p{
+            text-align: center;
+            width: 80%;
+            letter-spacing: 1.5px;  
+        }
+        .Ellipsebox1 .ellip1{
+            margin-left: 180px;
+            padding-left: 250px;
+            letter-spacing: 1.5px;
+            
+        }
+         .detail2{
+            margin-top: 90rem;
+            width: 100%;
+            padding: 10px;
+            height: auto; 
+        }
+        .box-data{            
+            text-align: center;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+        }
+        .box-data img{      
+            width: 120px;
+        }
+        .Step h2{
+            padding-left: 80px;
+            text-align: start;
+            font-size: 36px;
+            margin-top: 120rem;
+            width: 30%;
+        }
+        .step{
+            margin-top: 2rem;
+            height: 380px;
+            text-align: center;
+        }
+        .box-step{
+            text-align: center;
+            margin-top: 130rem;
+            font-size: 12px;
+            letter-spacing: 1px;
+            width: 100%;
+        }
+        .box-step .step {
+            text-align: center;
+            margin-left: 20%;
+            width: 60%;
+        }
+        .step1{
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+        }
+        .step2{
+            margin-left: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+        }
+        .step3{
+            margin-left: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+        }
+        .step4{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+        }
+        .footer{
+            text-align: center;
+            letter-spacing: 1.5px;
+            top: 240rem;
+        }
+        .socials{
+            letter-spacing: 1.5px;
+            margin: 2rem 0 2rem 0;
+        }
+    }
+        
+
